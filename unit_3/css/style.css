@@ -1,0 +1,43 @@
+body{
+	color: #000;
+	font-family: helvetica;
+	font-size: 18x;
+	background-color: #B4DADD;
+	text-align: center;
+}
+
+hr {
+  width: 200px;
+  color: #000000;
+  border-color: black;
+ } 
+
+h1 {
+	color: #D8FF32;
+	font-weight: 800;
+	font-size:42px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: helvetica; 
+}
+
+h2 {
+	color: #000;
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#Slogan{
+	font-style: italic;
+
+}
+
+#Aboutus{
+	text-align: center;
+
+}
+
+.productfeatures2{
+	text-align: left;
+} 
