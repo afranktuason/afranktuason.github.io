@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Signika:wght@300&display=swap');
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header {
+    padding: 20px;
+}
+
+#nav {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+
+} 
+
+a {
+  text-decoration: none;
+  padding: 50px;
+  width: 20px;
+}
+
+a:hover {
+  color: #D8FF32;
+}
+
+
+#two_column { 
+    background-color:#D8FF32;
+    text-align: left;
+    clear: both;
+}
+
+#left {
+    padding: 10px;
+    float: left;
+    width: 30%;
+}
+
+#right {
+    background-color:#D8FF32;
+    padding: 20px;
+    float: right;   
+    width: 62%;
+    text-align: left;
+}
+
+section {
+    padding: 20px;
+
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+  width: 82%;
+} 
+
+aside {
+    padding: 20px;
+}
+
+
+
+#two_column2 {
+    background-color: #e8eaee;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+#left2 {
+    padding: 10px;
+    float: left;
+    width: 30%;
+    border-right: 2px black solid;
+}
+
+#right2 {
+    background-color:#D8FF32;
+    padding: 20px;
+    float: right;   
+    width: 62%;
+    text-align: left;
+}
+
+
+footer {
+	  background-color: black;
+    color:#FFFFFF;
+    border: 2px black solid;
+    padding: 20px;
+}
+
+
+
+body{
+	color: #000;
+	font-family: 'Signika', sans-serif;
+	font-size: 18x;
+	background-color: #B4DADD;
+	text-align: center;
+  padding: 20px;
+}
+
+hr {
+  width: 200px;
+  color: #000000;
+  border-color: black;
+ } 
+
+h1 {
+	color: #D8FF32;
+	font-weight: 800;
+	font-size:42px;
+	text-transform: uppercase;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 3px;
+}
+
+h2 {
+	color: #000;
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+p {
+	font-family: 'Signika', sans-serif;
+	font-size: 18px;
+}
+
+#Slogan{
+	font-style: italic;
+
+}
+
+#Aboutus{
+	text-align: left;
+
+}
+
+
+
+
