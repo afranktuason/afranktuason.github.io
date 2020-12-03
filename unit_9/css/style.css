@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Signika:wght@300&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #B4DADD;
+}
+
+h1, h2 {
+  font-weight: 800;
+  text-transform: uppercase;
+  border-bottom: 4px solid black;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 1.25em;
+}
+
+h2 {
+  font-size: 1.25em;
+  padding: 13px 0;
+  color: #D8FF32;
+  border-bottom-color: #D8FF32;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float:left;
+  font-size: 1.25em;
+  width: 50%;
+  height: 100px;
+  outline: 2px solid #222222;
+  text-align: center;
+  line-height: 100px;
+  color: black;
+  background: white;
+}
+
+div {
+  padding: 30px;
+}
+
+nav {
+  font-size: 1.56em;
+  float: right;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #D8FF32;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid black;
+  padding: 18px 0;
+  margin-top: 40px;
+  clear: both;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  clear: both;
+  width: 480px;
+}
+
+#hero {
+  background: black;
+}
+
+section {
+  background: #B4DADD;
+  color: white;
+  overflow: auto;
+}
+
+#about {
+  font-size: 1.375em;
+  width: 40%;
+  display: inline-block;
+}
+
+#services {
+  font-size: 1.375em;
+  width: 40%;
+  float: right;
+}
+
+#footer {
+  background: black;
+  color:white;
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    float: none;
+  } 
+  nav {
+    float: none;
+  }
+  nav a {
+      margin: 0 1.6em .75em 0;
+  }
+  img {
+    width: 320px;
+}
+   #about {
+    font-size: 1.4em;
+    line-height: 1.8em;
+  }
+  
+@media only screen and (max-width: 480px) {
+  h1, nav {
+    display: block;
+    text-align: center;
+  }
+}
+ 
+  @media (max-width: 480px) {
+  h1, nav {
+    display: block;
+    text-align: center;
+  }
+  nav a {
+    margin: 0 1em 1em;
+  }
+  img {
+    width: 230px;
+  }
+ section, div {
+    width: 100%;
+    padding: .6em;
+  }
+  #services {
+    float: none;
+    font-size: 1.4em;
+  }
+     h2 {
+    font-size: 1em;
+    display: inline;
+  }
+   p, ul {
+     margin: 1.8em .6em 0;
+   }
+    li {
+    width: 80%;
+    outline-width: .5em;
+    padding: .5em;
+    height: 2em;
+    line-height: 2em;
+  }
+}
+}
+  
+  
