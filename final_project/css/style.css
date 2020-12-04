@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Signika:wght@300&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #B4DADD;
+}
+
+/* Styles for all elements.*/
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* header section (navigation and hero) styles You will now see the dark navigation bar stretching the full width of the browser.*/
+
+header {
+   height: 70px;
+   background-color: #3c3c3c;
+   padding: 10px 0;
+}
+
+ /* use display:flex to make all the child elements occupy the free space available horizontally. The property justify-content is set to space-between to stretch those elements as far apart as possible.
+
+.*/
+.menu-wrap {
+   display: flex;
+   justify-content: space-between;
+   padding: 0 15px;
+}
+
+.logo-img {
+   height: 50px;
+}
+
+.menu-icon {
+   font-size: 2.4em;
+   color: #ffffff;
+   line-height: 50px;
+}
+
+nav {
+   position: absolute;
+   background-color: #3c3c3c;
+   top:70px;
+   left:0;
+   width: 100%;
+}
+   /* Style the links and lists inside the navigation bar and absolutely position the whole menu below the bar on mobile phones.*/
+nav ul {
+   list-style-type: none;
+}
+nav ul li {
+   padding: 0 15px;
+}
+nav ul li a {
+   display: inline-block;
+   padding: 12px;
+   /* Style the links inside the navigation bar */
+   color: #DAE1E7;
+   text-decoration: none;
+   letter-spacing: 0.05em;
+}
+
+ /* Links change on hover */
+a:hover, a:focus {
+   color: #D8FF32;
+}
+
+ /* Footer Link - text decoration changes default blue and underline style*/
+a {
+   color: #D8FF32;
+   text-decoration: none;
+}
+
+
+
+/* navigation media queries */
+/* media query for tablet size */ /* When the screen is less than 768 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media (min-width: 768px) {
+}
+
+/* hide menu icon when sizing */
+@media (min-width: 768px) {
+  .menu-icon {
+     display: none;
+  }
+}
+
+/* large screen media query */ 
+@media (min-width: 768px) {
+  nav {
+    position: relative;
+    top:-10px;
+    background-color: transparent;
+  }
+  nav ul {
+    max-height: 70px;
+    padding: 15px 0;
+    text-align: right;
+  }
+  nav ul li {
+    display: inline-flex;
+    padding-left: 20px;
+  }
+}
+
+
+
+
+/* hero image section */ 
+
+/* div added to seperate the navbar from the other content. margin-top provides spacing when the browser is smaller for tablet/ mobile (it was overlapping before) a second media query was added below this for tablet/mobile screens*/
+section {
+  padding: 0px;
+  margin-top: 140px;
+  margin-bottom: 0;
+  height: 700px;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image to make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/Lrp0hfrl.png");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+/* style button from w3 schools. Use the width property to change the width of the button. Use pixels if you want to set a fixed width and use percent for responsive buttons (e.g. 100% of its parent element) */
+button {	
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 2px;
+  cursor: pointer;
+  width: 100%;
+
+}
+
+
+/* media query for tablet size */ /* When the screen is less than 768 pixels wide, make the image a block with 20px margin on top to prevent image from overlapping with stacking navigation. note: display: none will remove the image */
+
+/* hide image when sizing tablet size screen*/
+@media (max-width: 768px) {
+  .hero-image {
+     display: block;
+     margin-top: 20px;
+     margin-bottom: 0;
+  }
+  .button {
+  	width: 250%;
+  }
+}
+
+/* large screen media query  When the screen is greater than 768 pixels wide, make remove the top-margin spacing*/ 
+@media (min-width: 768px) {
+  section {
+    position: relative;
+    top:-10px;
+    background-color: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+
+  }
+  /* style button add shadow background from w3 schools*/
+button {
+	padding: 14px 40px;
+	box-shadow: 0 18px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+}
+
+
+/* footer sectton*/ 
+
+footer {
+    background-color: #3c3c3c;
+    color:#FFFFFF;
+    border: 2px black solid;
+    padding: 20px;
+    box-shadow: 0 18px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+}
+
+
+
+/* Form Section - Tutorial From w3schools - Full-width input fields */
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+form {
+  background-image: url("https://i.imgur.com/Lrp0hfrl.png");
+  background-size: contain;
+  width: 100%;
+  padding: 130px;
+  margin: -10px, 120px;
+  border: 1px solid;
+  box-shadow: 5px 10px #888888;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+/* Float  signup buttons and add an equal width */
+.signupbtn {
+  float: left;
+  width: 100%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: -350px;
+  margin-top: -350px;
+  background-color: #e9e9e9;
+  border: 2px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+   .signupbtn {
+     width: 100%;
+  }
+}
+
+
+/* two image layout product section  */
+/* Create two equal columns that floats next to each other. the content will take up 50% of the container */ 
+.column {
+  float: left;
+  width: 50%;
+  padding: 100px;
+}
+
+/* Clear floats after the columns */
+.article:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+
+/* style the images to be 100% the width of the container (so that it aligns with the button)  */
+.product1-img {
+   width: 100%;
+}
+
+
+.product2-img {
+  width: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* media query for large screens */
+@media (min-width: 768px) {
+  .column {
+    position: relative;
+    top:-10px;
+  }
+
+
+/* About Us section and article div - it's not working*/
+aside {
+  margin: -10px;
+  padding: 150px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+
+@media screen and (max-width: 650px) {
+  aside {
+    body: hide;
+    width: 100%;
+    display: none;
+  }
+
+
+
+
